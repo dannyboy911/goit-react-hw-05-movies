@@ -1,8 +1,7 @@
-// src/components/Cast/Cast.jsx
 import React, { useEffect, useState } from 'react';
-import { fetchMovieCredits } from '../../api/tmdb'; // Ensure you have a function to fetch movie credits
+import { fetchMovieCredits } from '../../api/tmdb';
 import { useParams } from 'react-router-dom';
-import styles from './Cast.module.css'; // Import the CSS module for styling
+import styles from './Cast.module.css';
 
 const Cast = () => {
   const { movieId } = useParams();
@@ -12,7 +11,7 @@ const Cast = () => {
     const getMovieCredits = async () => {
       try {
         const data = await fetchMovieCredits(movieId);
-        setCast(data.cast); // Assuming 'cast' contains the list of actors
+        setCast(data.cast);
       } catch (error) {
         console.error('Failed to fetch movie credits:', error);
       }
@@ -28,7 +27,7 @@ const Cast = () => {
         {cast.map(actor => (
           <li key={actor.cast_id} className={styles.castItem}>
             <img
-              src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} // Actor image
+              src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}
               alt={actor.name}
               className={styles.actorImage}
             />

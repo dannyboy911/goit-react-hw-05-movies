@@ -1,8 +1,7 @@
-// src/components/MovieDetails/MovieDetails.jsx
 import React, { useEffect, useState } from 'react';
 import { fetchMovieDetails } from '../../api/tmdb';
 import { Link, useParams } from 'react-router-dom';
-import { Outlet } from 'react-router-dom'; // Import Outlet for nested routes
+import { Outlet } from 'react-router-dom';
 import styles from './MovieDetais.module.css';
 
 const MovieDetails = () => {
@@ -32,12 +31,10 @@ const MovieDetails = () => {
         <h2>{movie.title}</h2>
         <p>{movie.overview}</p>
         <nav className={styles.nav}>
-          <Link to="cast">Cast</Link>
-          <Link to="reviews">Reviews</Link>
+          <Link to="cast">Cast</Link> <Link to="reviews">Reviews</Link>
         </nav>
       </div>
 
-      {/* Render nested routes here */}
       <Outlet />
     </div>
   );

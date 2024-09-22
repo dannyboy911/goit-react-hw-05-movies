@@ -1,31 +1,30 @@
-/* src/components/Cast/Cast.module.css */
 .container {
   padding: 20px;
 }
 
 .castList {
-  list-style: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
+  list-style: none;
+  padding: 0;
 }
 
 .castItem {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 15px; /* Space between cast items */
+  display: flex;
+  align-items: center;
+  /margin-bottom: 15px;
 }
 
 .actorImage {
-  width: 50px; /* Set image width */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Space between image and name */
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .actorName {
-  font-size: 18px; /* Adjust font size for actor names */
-  font-weight: bold; /* Optional: make the actor's name bold */
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .characterName {
-  font-size: 16px; /* Adjust font size for character names */
-  color: #555; /* Optional: gray color for character name */
+  font-size: 16px;
+  color: #555;
 }

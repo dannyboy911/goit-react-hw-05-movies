@@ -1,35 +1,35 @@
-/* src/components/MovieDetails/MovieDetails.module.css */
 .details {
-  display: flex; /* Use flexbox for layout */
+  display: flex;
   padding: 20px;
+  flex-direction: column;
 }
 
 .posterContainer {
-  flex: 1; /* Allow the poster to take up one part of the space */
-  max-width: 300px; /* Set a max width for the poster */
-  margin-right: 20px; /* Space between poster and description */
+  flex: 1;
+  max-width: 300px;
+  margin-right: 20px;
 }
 
 .posterImage {
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .descriptionContainer {
-  flex: 2; /* Allow the description to take up two parts of the space */
+  flex: 2;
 }
 
 .nav {
-  margin-top: 20px; /* Space above navigation links */
+  margin-top: 20px;
 }
 
 .nav a {
-  margin-right: 15px; /* Space between navigation links */
-  text-decoration: none; /* Remove underline from links */
-  color: blue; /* Link color */
+  margin-right: 15px;
+  text-decoration: none;
+  color: blue;
 }
 
 .nav a:hover {
-  text-decoration: underline; /* Underline on hover for clarity */
+  text-decoration: underline;
 }

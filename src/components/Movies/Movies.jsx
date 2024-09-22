@@ -1,4 +1,3 @@
-// src/components/Movies/Movies.jsx
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { searchMovies } from '../../api/tmdb';
@@ -21,7 +20,6 @@ const Movies = () => {
     const data = await searchMovies(query);
     setMovies(data.results);
 
-    // Update the URL with the search query
     history.push({
       pathname: location.pathname,
       search: `?query=${query}`,
